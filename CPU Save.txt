@@ -2,7 +2,7 @@
     getgenv().fpsthingenabled = true
     getgenv().fpsthing = {}
     getgenv().fpsthing.maxfpswhen = 50
-    getgenv().fpsthing.minfpswhen = 1
+    getgenv().fpsthing.minfpswhen = (psjs)
     setfpscap(fpsthing.maxfpswhen)
     local uis = game:GetService("UserInputService")
     local con1,con2 = nil,nil
@@ -20,7 +20,7 @@
     task.wait(2.5)
     con2 = uis.WindowFocusReleased:Connect(function()
     if getgenv().fpsthingenabled == true then
-       setfpscap(getgenv().fpsthing.psjs)
+       setfpscap(getgenv().fpsthing.minfpswhen)
     ru:Set3dRenderingEnabled(false)
     --[[else
     con1:Disconnect()
