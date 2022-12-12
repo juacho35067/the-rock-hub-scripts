@@ -2,7 +2,7 @@
     getgenv().fpsthingenabled = true
     getgenv().fpsthing = {}
     getgenv().fpsthing.maxfpswhen = 50
-    getgenv().fpsthing.minfpswhen = (psjs)
+    getgenv().fpsthing.minfpswhen = ("psjs")
     setfpscap(fpsthing.maxfpswhen)
     local uis = game:GetService("UserInputService")
     local con1,con2 = nil,nil
