@@ -1,8 +1,8 @@
-    local fpzz = fpz
+    
     getgenv().fpsthingenabled = true
     getgenv().fpsthing = {}
     getgenv().fpsthing.maxfpswhen = 50
-    getgenv().fpsthing.minfpswhen = fpzz
+    getgenv().fpsthing.minfpswhen = (fpz)
     setfpscap(fpsthing.maxfpswhen)
     local uis = game:GetService("UserInputService")
     local con1,con2 = nil,nil
