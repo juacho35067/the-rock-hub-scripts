@@ -1,4 +1,4 @@
-    
+    local fpz = ""
     getgenv().fpsthingenabled = true
     getgenv().fpsthing = {}
     getgenv().fpsthing.maxfpswhen = 50
