@@ -1,0 +1,248 @@
+function MakeScriptHub()
+    local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+	local Window = OrionLib:MakeWindow({Name = "The Rock Hub", HidePremium = false, SaveConfig = false, IntroText = "Welcome to The Rock Hub", IntroIcon = "rbxassetid://11380998892", ConfigFolder = "TheRock"})
+
+	
+    local Tab = Window:MakeTab({
+		Name = "Welcome",
+		Icon = "rbxassetid://11380998892",
+		PremiumOnly = false
+	})
+	
+    
+	
+	Tab:AddParagraph("Information","Welcome to The Rock Hub and thank you very much for using it, the more support I get I will add more features,  you can recommend scripts and new features on the discord.")
+    Tab:AddParagraph("why did me create The Rock Hub?","The answer is very simple, I wanted to save the scripts that were most useful to me in a hub so I wouldn't lose them and have them in order, so I thought why not share this?")
+    
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    local Tab = Window:MakeTab({
+		Name = "Universal Scripts",
+		Icon = "rbxassetid://11380998892",
+		PremiumOnly = false
+	})
+	
+	Tab:AddLabel("Scripts")
+	
+    Tab:AddButton({
+		Name = "Infinity Yield",
+		Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+		end    
+	})
+	
+	Tab:AddButton({
+		Name = "Remote Spy",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua'))()
+		end    
+	})
+	
+    
+    Tab:AddButton({
+		Name = "CPU Save",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/CPU%20Save.txt'))()
+		end    
+	})
+    
+    
+    Tab:AddButton({
+		Name = "Ctrl Destroy",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Ctrl%20Destroy.txt'))()
+		end    
+	})
+    
+    
+    Tab:AddButton({
+		Name = "Fe HumandHat",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Fe%20HumandHat.txt'))()
+		end    
+	})
+    
+    
+    Tab:AddButton({
+		Name = "Fps Boost v1 (lag)",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Fps%20Boost%20v1%20(lag).txt'))()
+		end    
+	})
+    
+    
+    Tab:AddButton({
+		Name = "Fps Boost v2 (noLag)",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Fps%20Boost%20v2%20(noLag).txt'))()
+		end    
+	})
+    
+    
+    Tab:AddButton({
+		Name = "Google Translator(English)",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Google%20Translator.txt'))()
+		end    
+	})
+    
+    
+    
+    Tab:AddButton({
+		Name = "Google Translator(Spanish)",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Google%20Translator(Spanish).txt'))()
+		end    
+	})
+    
+    
+    
+    Tab:AddButton({
+		Name = "Rejoin",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Rejoin.txt'))()
+		end    
+	})
+    
+    
+    Tab:AddButton({
+		Name = "Server with few people",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Server%20with%20few%20people.txt'))()
+		end    
+	})
+    
+    
+    Tab:AddButton({
+		Name = "Teleport Script Generator",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Teleport%20Script%20Generator.txt'))()
+		end    
+	})
+    
+    
+    
+    Tab:AddButton({
+		Name = "Universal Client Cooldown Bypass",
+		Callback = function()
+			local old
+            old = hookfunction(wait, newcclosure(function(...)
+               return old()
+            end))
+            local balls
+            balls = hookfunction(task.wait, newcclosure(function(...)
+               return balls()
+            end)) 
+		end    
+	})
+    
+    
+    
+    
+    
+    Tab:AddButton({
+		Name = "Private Chat Spy",
+		Callback = function()
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/juacho35067/the-rock-hub-scripts/main/Private%20Chat%20Spy.txt'))()
+		end    
+	})
+    
+    
+    
+    
+    
+    
+    OrionLib:Init()
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "The Rock System", HidePremium = false, SaveConfig = false, IntroEnabled = false})
+
+OrionLib:MakeNotification({
+    Name = "The Rock Key",
+    Content = "Thanks for Using The Rock Hub : "..Player.Name.." ",
+    Image = "rbxassetid://11380998892",
+    Time = 5
+})
+
+_G.k5y = "theRock"
+_G.KeyInput = "nil"
+
+
+
+function IncorrectKeyNotification()
+    OrionLib:MakeNotification({
+        Name = "Incorrect Key",
+        Content = "Weak! ^_-",
+        Image = "rbxassetid://11380998892",
+        Time = 5
+    })
+end
+
+local Tab = Window:MakeTab({
+	Name = "Key",
+	Icon = "",
+	PremiumOnly = false
+})
+
+Tab:AddTextbox({
+	Name = "Enter Key",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		_G.KeyInput = Value
+	end
+})
+
+Tab:AddButton({
+	Name = "Check Key!",
+	Callback = function()
+      		if _G.KeyInput == _G.k5y then
+			MakeScriptHub()
+            else
+                IncorrectKeyNotification()
+        end
+  	end   
+})
+OrionLib:Init()
